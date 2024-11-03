@@ -1,0 +1,21 @@
+﻿<h1>Dipole Calculator</h1>
+
+<label>Please enter frequency in Mhz: </label>
+<input @bind="freq" />
+<p role="status">Wavelength in free space: @wavelength m.</p>
+<p role="status">1/2 wave dipole in free space: @dipole m</p>
+<p role="status">aluminium or copper dipole: @dipole2 m.</p>
+
+@code {
+    public double freq { get; set; }
+    public double wavelength = 0;
+    public double dipole = 0;
+    public double dipole2 = 0;
+
+    private void Calc()
+    {
+        wavelength = 300 / freq;
+        dipole = wavelength / 2;
+        dipole2 = dipole * 0.96;
+    }
+}

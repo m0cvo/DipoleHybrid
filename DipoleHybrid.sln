@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DipoleHybrid", "DipoleHybrid.csproj", "{66AC54DA-36ED-4277-8613-C21E65D5E57C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DipoleHybrid", "DipoleHybrid.csproj", "{66AC54DA-36ED-4277-8613-C21E65D5E57C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
