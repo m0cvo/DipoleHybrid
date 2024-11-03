@@ -7,6 +7,8 @@
 <p role="status">aluminium or copper dipole: @dipole2 m.</p>
 
 <button class="btn btn-primary" @onclick="Calc">Enter</button>
+<br />
+<button class="btn-secondary" @onclick="Reset">Reset</button>
 
 @code {
     public double freq { get; set; }
@@ -19,5 +21,10 @@
         wavelength = 300 / freq;
         dipole = wavelength / 2;
         dipole2 = dipole * 0.96;
+    }
+
+    private void Reset()
+    {
+        freq = wavelength = dipole = dipole2 = 0;
     }
 }
