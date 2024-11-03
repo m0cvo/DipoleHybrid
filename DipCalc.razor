@@ -2,12 +2,11 @@
 
 <label>Please enter frequency in Mhz: </label>
 <input @bind="freq" />
+<button class="btn btn-primary" @onclick="Calc">Enter</button>
 <p role="status">Wavelength in free space: @wavelength m.</p>
 <p role="status">1/2 wave dipole in free space: @dipole m</p>
 <p role="status">aluminium or copper dipole: @dipole2 m.</p>
 
-<button class="btn btn-primary" @onclick="Calc">Enter</button>
-<br />
 <button class="btn-secondary" @onclick="Reset">Reset</button>
 
 @code {
