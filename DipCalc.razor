@@ -9,6 +9,12 @@
 
 <button class="btn-secondary" @onclick="Reset">Reset</button>
 
+<hr />
+
+<p>This calculator provides the overall electrical length of a 1/2 wave dipole.  It can be centre fed where the impedance is 50 - 70Ohms or off centre fed at 1/3 of the way along where the 
+    impedance is approximately 200 Ohms and will need to be fed via a 4:1 BALUN.  Centre fed is for a single band dipole, whereas off centre fed is for multi band use as it will also be resonant
+    on the harmonics of the primary band.</p>
+
 @code {
     public double freq { get; set; }
     public double wavelength = 0;
